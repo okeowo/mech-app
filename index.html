@@ -1,0 +1,272 @@
+<html>
+  <head>
+    <!-- Material Design Lite -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./material.min.css">
+    <link rel="stylesheet" href="./owned.css">
+    <script src="./material.min.js"></script>
+    <!-- <link rel="stylesheet" href="./leaflet/leaflet.css"> -->
+    <!-- <script src="./leaflet/leaflet.js"></script> -->
+    <script src="init.js" type="text/javascript"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnasDHWhENScCDgSQ_gz9LqVOgw_3TFXs&callback=initMap"></script>
+    <!-- <script src='https://unpkg.com/leaflet.gridlayer.googlemutant@latest/Leaflet.GoogleMutant.js'></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+
+
+
+
+    <!-- Material Design icon font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.brown-indigo.min.css" /> -->
+  </head>
+  <body>
+    <!-- The drawer is always open in large screens. The header is always shown,
+      even in small screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+                mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <div class="mdl-layout-spacer"></div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                      mdl-textfield--floating-label mdl-textfield--align-right">
+            <label class="mdl-button mdl-js-button mdl-button--icon"
+                   for="fixed-header-drawer-exp">
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" name="sample"
+                     id="fixed-header-drawer-exp">
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Owned</span>
+        <nav class="mdl-navigation owned-side-bar-nav">
+          <ul class="mainmenu">
+            <li class="mdl-list__item"><span class="mdl-list__item-primary-content"><i class="material-icons mdl-list__item-icon icon">grain</i>Automotive</span></li>
+                <ul class="submenu">
+                  <div class="expand-triangle"></div>
+                  <li class="mdl-list__item mdl-list"><span>Car Dealers and Leasing</span></li>
+                  <li class="mdl-list__item mdl-list"><span>Car Parts and Accessories</span></li>
+                  <li class="mdl-list__item mdl-list"><span>Car Wash and Detail</span></li>
+                  <li class="mdl-list__item mdl-list"><span>Maintenance and Repair</span></li>
+                  <li class="mdl-list__item mdl-list"><span>Towing</span></li>
+                </ul>
+
+            <li class="mdl-list__item"><span class="mdl-list__item-primary-content"><i class="material-icons mdl-list__item-icon icon">grain</i>Community and Government</span></li>
+              <ul class="submenu">
+                <div class="expand-triangle"></div>
+                <li class="mdl-list__item mdl-list"><span>Animal Shelters and Humane Societies</span></li>
+                <li class="mdl-list__item mdl-list"><span>Cemeteries</span></li>
+                <li class="mdl-list__item mdl-list"><span>Day Care and Preschools</span></li>
+                <li class="mdl-list__item submenu1"><span class="mdl-list__item-primary-content"><i class="material-icons mdl-list__item-icon icon"></i>Education</span></li>
+                    <ul class="submenu">
+                      <div class="expand-triangle"></div>
+                      <li class="mdl-list__item mdl-list"><span>Adult Education</span></li>
+                      <li class="mdl-list__item mdl-list"><span>Colleges and Universities</span></li>
+                      <li class="mdl-list__item mdl-list"><span>Computer Training</span></li>
+                      <li class="mdl-list__item mdl-list"><span>Culinary Lessons and Schools</span></li>
+                      <li class="mdl-list__item mdl-list"><span>Driving Schools</span></li>
+                      <li class="mdl-list__item mdl-list"><span>Fraternities and Sororities</span></li>
+                      <li class="mdl-list__item mdl-list"><span>Tutoring and Educational Services</span></li>
+                    </ul>
+                <li class="mdl-list__item mdl-list"><span>Housing Assistance and Shelters</span></li>
+                <li class="mdl-list__item mdl-list"><span>Libraries</span></li>
+                <li class="mdl-list__item mdl-list"><span>Charities and Non-Profits</span></li>
+                <li class="mdl-list__item mdl-list"><span>Youth Organizations</span></li>
+                <li class="mdl-list__item mdl-list"><span>Utility Companies</span></li>
+              </ul>
+
+            <li class="mdl-list__item"><span class="mdl-list__item-primary-content"><i class="material-icons mdl-list__item-icon icon">grain</i>Healthcare</span></li>
+              <ul class="submenu">
+                <div class="expand-triangle"></div>
+                <li class="mdl-list__item mdl-list"><span>Acupuncture</span></li>
+                <li class="mdl-list__item mdl-list"><span>AIDS Resources</span></li>
+                <li class="mdl-list__item mdl-list"><span>Assisted Living Services</span></li>
+                <li class="mdl-list__item mdl-list"><span>Blood Banks and Centers</span></li>
+                <li class="mdl-list__item mdl-list"><span>Chiropractors</span></li>
+                <li class="mdl-list__item mdl-list"><span>Counseling and Therapy</span></li>
+                <li class="mdl-list__item mdl-list"><span>Dentists</span></li>
+                <li class="mdl-list__item mdl-list"><span>Facilities and Nursing Homes</span></li>
+                <li class="mdl-list__item mdl-list"><span>Home Health Care Services</span></li>
+                <li class="mdl-list__item mdl-list"><span>Hospitals, Clinics and Medical Centers</span></li>
+                <li class="mdl-list__item mdl-list"><span>Medical Supplies and Labs</span></li>
+                <li class="mdl-list__item mdl-list"><span>Pharmacies</span></li>
+                <li class="mdl-list__item submenu1"><span class="mdl-list__item-primary-content"><i class="material-icons mdl-list__item-icon icon"></i>Physicians</span></li>
+                    <ul class="submenu">
+                      <div class="expand-triangle"></div>
+                      <li class="mdl-list__item mdl-list"><span>Anesthesiologists</span></li>
+                      <li class="mdl-list__item mdl-list"><span>Cardiologists</span></li>
+                      <li class="mdl-list__item mdl-list"><span>Dermatologists</span></li>
+                      <li class="mdl-list__item mdl-list"><span> Ear, Nose and Throat</span></li>
+                      <li class="mdl-list__item mdl-list"><span>Family Medicine</span></li>
+                      <li class="mdl-list__item mdl-list"><span>Gastroenterologists</span></li>
+                      <li class="mdl-list__item mdl-list"><span>General Surgery</span></li>
+                      <li class="mdl-list__item mdl-list"><span>Internal Medicine</span></li>
+                      <li class="mdl-list__item mdl-list"><span>Neurologists</span></li>
+                      <li class="mdl-list__item mdl-list"><span>Obstetricians and Gynecologists</span></li>
+                      <li class="mdl-list__item mdl-list"><span>Oncologists</span></li>
+                      <li class="mdl-list__item mdl-list"><span>Ophthalmologists</span></li>
+                      <li class="mdl-list__item mdl-list"><span>Orthopedic Surgeons</span></li>
+                      <li class="mdl-list__item mdl-list"><span>Pediatricians</span></li>
+                      <li class="mdl-list__item mdl-list"><span>Plastic Surgeons</span></li>
+                      <li class="mdl-list__item mdl-list"><span>Psychiatrists</span></li>
+                      <li class="mdl-list__item mdl-list"><span>Radiologists</span></li>
+                      <li class="mdl-list__item mdl-list"><span>Respiratory</span></li>
+                      <li class="mdl-list__item mdl-list"><span>Urologists</span></li>
+                      <li class="mdl-list__item mdl-list"><span>Geriatrics</span></li>
+                    </ul>
+                <li class="mdl-list__item mdl-list"><span>Sports Medicine</span></li>
+                <li class="mdl-list__item mdl-list"><span>Podiatrists</span></li>
+                <li class="mdl-list__item mdl-list"><span>Pregnancy and Sexual Health</span></li>
+                <li class="mdl-list__item mdl-list"><span>Optometrist</span></li>
+              </ul>
+
+            <li class="mdl-list__item"><span class="mdl-list__item-primary-content"><i class="material-icons mdl-list__item-icon icon">grain</i>Landmarks</span></li>
+              <ul class="submenu">
+                <div class="expand-triangle"></div>
+                <li class="mdl-list__item mdl-list"><span>Buildings and Structures</span></li>
+                <li class="mdl-list__item mdl-list"><span>Gardens</span></li>
+                <li class="mdl-list__item mdl-list"><span>Parks</span></li>
+              </ul>
+
+            <li class="mdl-list__item"><span class="mdl-list__item-primary-content"><i class="material-icons mdl-list__item-icon icon">grain</i>Retail</span></li>
+              <ul class="submenu">
+                <div class="expand-triangle"></div>
+                <li class="mdl-list__item mdl-list"><span>Antiques</span></li>
+                <li class="mdl-list__item mdl-list"><span>Bookstores</span></li>
+                <li class="mdl-list__item mdl-list"><span>Cards and Stationery</span></li>
+                <li class="mdl-list__item mdl-list"><span>Children</span></li>
+                <li class="mdl-list__item mdl-list"><span>Computers and Electronics</span></li>
+                <li class="mdl-list__item mdl-list"><span>Construction Supplies</span></li>
+                <li class="mdl-list__item mdl-list"><span>Convenience Stores</span></li>
+                <li class="mdl-list__item mdl-list"><span>Costumes/Attires</span></li>
+                <li class="mdl-list__item mdl-list"><span>Dance and Music</span></li>
+                <li class="mdl-list__item mdl-list"><span>Department Stores</span></li>
+                <li class="mdl-list__item mdl-list"><span>Fashion</span></li>
+                <li class="mdl-list__item mdl-list"><span>Flea Markets</span></li>
+                <li class="mdl-list__item mdl-list"><span>Florists</span></li>
+                <li class="mdl-list__item mdl-list"><span>Food and Beverage</span></li>
+                <li class="mdl-list__item mdl-list"><span>Furniture and Decor</span></li>
+                <li class="mdl-list__item mdl-list"><span>Gift and Novelty</span></li>
+                <li class="mdl-list__item mdl-list"><span>Home Appliances</span></li>
+                <li class="mdl-list__item mdl-list"><span>Housewares</span></li>
+                <li class="mdl-list__item mdl-list"><span>Nurseries and Garden Centers</span></li>
+                <li class="mdl-list__item mdl-list"><span>Office Supplies</span></li>
+                <li class="mdl-list__item mdl-list"><span>Pawn Shops</span></li>
+                <li class="mdl-list__item mdl-list"><span>Pets</span></li>
+                <li class="mdl-list__item mdl-list"><span>Photos and Frames</span></li>
+                <li class="mdl-list__item mdl-list"><span>Supermarkets and Groceries</span></li>
+                <li class="mdl-list__item mdl-list"><span>Vintage and Thrift</span></li>
+                <li class="mdl-list__item mdl-list"><span>Warehouses and Wholesale Stores</span></li>
+                <li class="mdl-list__item mdl-list"><span>Wedding and Bridal</span></li>
+                <li class="mdl-list__item mdl-list"><span>Party Supplies</span></li>
+              </ul>
+
+            <li class="mdl-list__item"><span class="mdl-list__item-primary-content"><i class="material-icons mdl-list__item-icon icon">grain</i>Businesses and Services</span></li>
+              <ul class="submenu">
+                <div class="expand-triangle"></div>
+                <li class="mdl-list__item mdl-list"><span>Business and Strategy Consulting</span></li>
+                <li class="mdl-list__item mdl-list"><span>Industrial Machinery and Vehicles</span></li>
+                <li class="mdl-list__item mdl-list"><span>Trash</span></li>
+                <li class="mdl-list__item mdl-list"><span>Metals</span></li>
+                <li class="mdl-list__item mdl-list"><span>Petroleum</span></li>
+                <li class="mdl-list__item mdl-list"><span>Refrigeration and Ice</span></li>
+                <li class="mdl-list__item mdl-list"><span>Security and Safety</span></li>
+                <li class="mdl-list__item mdl-list"><span>Telecommunication Services</span></li>
+                <li class="mdl-list__item mdl-list"><span>Textiles</span></li>
+                <li class="mdl-list__item mdl-list"><span>Welding</span></li>
+                <li class="mdl-list__item mdl-list"><span>Advertising and Marketing</span></li>
+                <li class="mdl-list__item mdl-list"><span>Agriculture and Forestry</span></li>
+                <li class="mdl-list__item mdl-list"><span>Art Restoration</span></li>
+                <li class="mdl-list__item mdl-list"><span>Audiovisual</span></li>
+                <li class="mdl-list__item mdl-list"><span>Automation and Control Systems</span></li>
+                <li class="mdl-list__item mdl-list"><span>Computers</span></li>
+                <li class="mdl-list__item mdl-list"><span>Employment Agencies</span></li>
+                <li class="mdl-list__item mdl-list"><span>Engineering</span></li>
+                <li class="mdl-list__item mdl-list"><span>Entertainment</span></li>
+                <li class="mdl-list__item mdl-list"><span>Financial</span></li>
+                <li class="mdl-list__item mdl-list"><span>Food and Beverage</span></li>
+              </ul>
+
+            <li class="mdl-list__item"><span class="mdl-list__item-primary-content"><i class="material-icons mdl-list__item-icon icon">group</i>Social</span></li>
+              <ul class="submenu">
+                <div class="expand-triangle"></div>
+                <li class="mdl-list__item mdl-list"><span>Arts</span></li>
+                <li class="mdl-list__item mdl-list"><span>Bars</span></li>
+                <li class="mdl-list__item mdl-list"><span>Clubs</span></li>
+                <li class="mdl-list__item mdl-list"><span>Entertainment</span></li>
+                <li class="mdl-list__item mdl-list"><span>Food and Dining</span></li>
+                <li class="mdl-list__item mdl-list"><span>Wineries and Vineyards</span></li>
+                <li class="mdl-list__item mdl-list"><span>Zoos, Aquariums and Wildlife Sanctuaries</span></li>
+                <li class="mdl-list__item mdl-list"><span>Entertainment</span></li>
+                <li class="mdl-list__item mdl-list"><span>Entertainment</span></li>
+                <li class="mdl-list__item mdl-list"><span>Entertainment</span></li>
+              </ul>
+
+            <li class="mdl-list__item"><span class="mdl-list__item-primary-content"><i class="material-icons mdl-list__item-icon icon">grain</i>Sports and Recreation</span></li>
+              <ul class="submenu">
+                <div class="expand-triangle"></div>
+                <li class="mdl-list__item mdl-list"><span>New</span></li>
+                <li class="mdl-list__item mdl-list"><span>Sent</span></li>
+                <li class="mdl-list__item mdl-list"><span>Trash</span></li>
+              </ul>
+
+            <li class="mdl-list__item"><span class="mdl-list__item-primary-content"><i class="material-icons mdl-list__item-icon icon">grain</i>Transportation</span></li>
+              <ul class="submenu">
+                <div class="expand-triangle"></div>
+                <li class="mdl-list__item mdl-list"><span>New</span></li>
+                <li class="mdl-list__item mdl-list"><span>Sent</span></li>
+                <li class="mdl-list__item mdl-list"><span>Trash</span></li>
+              </ul>
+
+            <li class="mdl-list__item"><span class="mdl-list__item-primary-content"><i class="material-icons mdl-list__item-icon icon">grain</i>Travel</span></li>
+              <ul class="submenu">
+                <div class="expand-triangle"></div>
+                <li class="mdl-list__item mdl-list"><span>New</span></li>
+                <li class="mdl-list__item mdl-list"><span>Sent</span></li>
+                <li class="mdl-list__item mdl-list"><span>Trash</span></li>
+              </ul>
+          </ul>
+        </nav>
+
+      </div>
+      <main class="mdl-layout__content">
+        <div class="page-content">
+            <div id="map">
+              <!-- <div id="loadingImg" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div> -->
+            </div>
+          </div>
+      </main>
+    </div>
+
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnasDHWhENScCDgSQ_gz9LqVOgw_3TFXs" async defer></script> -->
+    <script type="text/javascript">
+    // LIST NAV
+    $(document).ready(function()
+    {
+      var $submenu = $('.submenu');
+      var $mainmenu = $('.mainmenu');
+      $submenu.hide();
+      $submenu.first().delay(400).slideDown(700);
+      $submenu.on('click', 'li', function()
+      {
+        $submenu.siblings().find('li').removeClass('chosen');
+        $(this).addClass('chosen');
+      });
+      $mainmenu.on('click', 'li', function()
+      {
+        $(this).next('.submenu').slideToggle().siblings('.submenu').slideUp();
+      });
+      $mainmenu.children('li:last-child').on('click', function()
+      {
+        $mainmenu.fadeOut().delay(500).fadeIn();
+      });
+    });
+    </script>
+  </body>
+</html>
